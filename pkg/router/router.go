@@ -21,7 +21,7 @@ func Start() {
 	})
 
 	telegramAPI := r.Group("/api/v0/telegram")
-	
+
 	telegramAPI.POST("/newuser", handlers.NotImplementedYet)
 	telegramAPI.POST("/newgroup", handlers.NotImplementedYet)
 	telegramAPI.POST("/getusersingroup", handlers.NotImplementedYet)
@@ -32,6 +32,6 @@ func Start() {
 	telegramAPI.POST("/deleteexpense", handlers.NotImplementedYet)
 	telegramAPI.POST("/editexpense", handlers.NotImplementedYet)
 	telegramAPI.POST("/settleup", handlers.NotImplementedYet)
-	
+
 	r.Run() // listen and serve on 0.0.0.0:8080
 }

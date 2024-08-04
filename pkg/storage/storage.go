@@ -8,11 +8,11 @@ import (
 	"gorm.io/gorm"
 )
 
-  type Storage struct {
+type Storage struct {
 	db *gorm.DB
-  }
+}
 
-  func New() Storage {
+func New() Storage {
 	databaseConfig := config.GetConfig().DatabaseConfig
 	user := databaseConfig.User
 	password := databaseConfig.Password
@@ -24,8 +24,8 @@ import (
 	if err != nil {
 		panic("unable to connect to db")
 	}
-	
+
 	return Storage{
 		db: db,
 	}
-  }
+}
