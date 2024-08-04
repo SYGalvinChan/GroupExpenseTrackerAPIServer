@@ -1,12 +1,18 @@
 package router
 
 import (
+	"GroupExpenseTracker/pkg/config"
 	"GroupExpenseTracker/pkg/handlers"
+	"GroupExpenseTracker/pkg/storage"
 
 	"github.com/gin-gonic/gin"
 )
 
 func Start() {
+	config.InitConfig("config/apiserver.json")
+
+	storage.New()
+
 	r := gin.Default()
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{

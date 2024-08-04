@@ -1,0 +1,12 @@
+{
+  "database_config": {
+    "user": "",
+    "password": "",
+    "address": "",
+    "database_name": ""
+  },
+  "server_config": {
+    "ip": "",
+    "port": 0
+  }
+}

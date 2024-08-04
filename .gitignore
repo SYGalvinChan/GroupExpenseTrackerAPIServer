@@ -26,3 +26,7 @@ go.work.sum
 
 # build files
 /build/*
+
+# config files (allow template)
+/config/*
+!/config/template.json
