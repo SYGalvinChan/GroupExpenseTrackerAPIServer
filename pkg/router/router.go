@@ -22,7 +22,7 @@ func Start() {
 
 	telegramAPI := r.Group("/api/v0/telegram")
 
-	telegramAPI.POST("/newuser", handlers.NotImplementedYet)
+	telegramAPI.POST("/newuser", handlers.NewUser)
 	telegramAPI.POST("/newgroup", handlers.NotImplementedYet)
 	telegramAPI.POST("/getusersingroup", handlers.NotImplementedYet)
 	telegramAPI.POST("/getgroupswithuser", handlers.NotImplementedYet)
